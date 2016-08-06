@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Array.prototype.copyWithin()</title>
+</head>
+<body>
+<script>
+/* 
+	Array.prototype.copyWithin();
+	Copies a sequence of elements within an array to another position within the array
+	Returns the modified array
+	ES6 Method
+*/
+const rappers = ['Kanye West', 'Drake', 'Jay Z', 'Desiigner', 'Eminem'];
+
+// args(index to copy to, index to start copying from, index to end copying from)
+// start default is 0
+// end default is arr.length
+
+// Copy Kanye to Jay Z
+rappers.copyWithin(2, 0);
+
+// copy eminem to kanye west
+rappers.copyWithin(0, -1);
+
+// Copy to JayZ
+// Kanye West, Drake, Jay Z
+rappers.copyWithin(-3, 0, 2);
+
+console.log(rappers);
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Array.prototype.unshift()</title>
+</head>
+<body>
+<script>
+/* 
+	Array.prototype.unshift();
+	Adds element(s) to the front of an array 
+	Returns the new length of the array
+*/
+
+const rappers = ['Kanye West', 'Drake', 'Jay Z', 'Desiigner', 'Eminem'];
+
+const newArrayLength = rappers.unshift('Andre 300', 'Nas', 'BIG');
+
+console.log(rappers);
+console.log(newArrayLength);
+
+const nigerianRappers = ['Wiz Kid', 'Davido'];
+Array.prototype.unshift.apply(rappers, nigerianRappers);
+
+console.log(rappers);
+</script>
+</body>
+</html>

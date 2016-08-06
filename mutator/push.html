@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Array.prototype.push()</title>
+</head>
+<body>
+<script>
+/* 
+	Array.prototype.push();
+	Adds element(s) to the end of an array
+	Returns the new length of the array
+*/
+
+const rappers = ['Kanye West', 'Drake', 'Jay Z', 'Desiigner', 'Eminem'];
+
+const newArrayLength = rappers.push('Andre 300', 'Nas', 'BIG');
+
+console.log(rappers);
+console.log(newArrayLength);
+
+const nigerianRappers = ['Wiz Kid', 'Davido'];
+Array.prototype.push.apply(rappers, nigerianRappers);
+
+console.log(rappers);
+
+	
+</script>
+</body>
+</html>

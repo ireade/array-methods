@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Array.prototype.splice()</title>
+</head>
+<body>
+<script>
+/* 
+	Array.prototype.splice();
+	Adds and/or removes elements from an array
+	Returns an array of the deleted items
+*/
+
+const rappers = ['Kanye West', 'Drake', 'Jay Z', 'Desiigner', 'Eminem'];
+
+const deletedRappers = rappers.splice(2, 0, 'Andre 3000', 'Wiz Kid');
+
+console.log(rappers);	
+
+console.log(deletedRappers);	
+
+</script>
+</body>
+</html>

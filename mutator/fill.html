@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Array.prototype.fill()</title>
+</head>
+<body>
+<script>
+/* 
+	Array.prototype.fill();
+	Fills elements within an array with a static value
+	Returns the modified array
+	ES6 Method
+*/
+
+const rappers = ['Kanye West', 'Drake', 'Jay Z', 'Desiigner', 'Eminem'];
+
+// args(value to fill, start index, end index)
+
+rappers.fill('Eminem');
+
+rappers.fill('Eminem', 2);
+
+rappers.fill('Eminem', 1, 2);
+
+newArray = rappers.fill('Eminem', 1, 2);
+
+console.log(rappers);
+</script>
+</body>
+</html>

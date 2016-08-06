@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Array.prototype.sort()</title>
+</head>
+<body>
+<script>
+/* 
+	Array.prototype.sort();
+	Sorts the elements within an array
+	Returns the newly sorted array
+*/
+
+const rappers = ['Kanye West', 'Drake', 'Jay Z', 'Desiigner', 'Eminem'];
+
+// Default sort is according to string Unicode code points
+// So alphabetically or numerically
+const defaultSort = rappers.sort();
+console.log(rappers);
+
+
+// Pass it a function
+const favRappers = [
+	{
+		name: 'Kanye West',
+		rating: 90
+	},
+	{
+		name: 'Drake',
+		rating: 85
+	},
+	{
+		name: 'Jay Z',
+		rating: 85
+	},
+	{
+		name: 'Desiigner',
+		rating: 70
+	},
+	{
+		name: 'Eminem',
+		rating: 100
+	}
+]
+
+
+favRappers.sort(function(a, b) {
+
+	if ( a.rating > b.rating ) {
+		// If you want a to have a lower index, i.e. a is first
+		return -1;
+	}
+
+	if ( b.rating > a.rating ) {
+		// If you want b to have a lower index, i.e. b is first
+		return 1;
+	} 
+
+	// If they should remain the same
+	return 0;
+});
+
+console.log(favRappers);
+	
+</script>
+</body>
+</html>
